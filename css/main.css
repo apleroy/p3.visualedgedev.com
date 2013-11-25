@@ -1,5 +1,32 @@
 .container {
+  background-color: green;
+}
 
+#tester {
+ background-color: red;
+}
+
+#tester2 {
+
+}
+
+.bars {
+  background-color: orange;
+  height: 100px;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#push{
+  background-color: black;
+  z-index: 20;
+  height: 100px;
+}
+
+#break_before_footer {
+  height: 40px;
 }
 
 h4 {
@@ -15,10 +42,17 @@ h4 {
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #eee;
+  
   border: 1px solid #ddd;
   background-color: rgba(86,61,124,.15);
   border: 1px solid rgba(86,61,124,.2);
+  background-color: orange;
+}
+
+
+
+#col-holder {
+  background-color: red;
 }
 
 hr {
@@ -38,7 +72,8 @@ html,
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto 10px;
+        margin: 0 auto;
+        background-color: yellow;
       }
 
       /* Set the fixed height of the footer here */
