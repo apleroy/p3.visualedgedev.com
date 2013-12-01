@@ -1,33 +1,25 @@
 .container {
-  background-color: green;
+  max-width: 760px;
 }
 
 #tester {
  background-color: red;
 }
 
-#tester2 {
+#list_item_holder {
 
 }
 
-.bars {
-  background-color: orange;
-  height: 100px;
-  width: 100%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-}
 
-#push{
-  background-color: black;
-  z-index: 20;
-  height: 100px;
-}
+    #push{
+      background-color: black;
+      z-index: 20;
+      height: 100px;
+    }
 
-#break_before_footer {
-  height: 40px;
-}
+    #break_before_footer {
+      height: 40px;
+    }
 
 h4 {
   margin-top: 25px;
@@ -39,27 +31,66 @@ h4 {
   margin-top: 10px;
   margin-bottom: 0;
 }
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+
+    [class*="col-"] {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      min-height: 80px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      
+      border: 1px solid #ddd;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid rgba(86,61,124,.2);
+      
+    }
+
+      .list_item_header {
+        background-color: yellow;
+        width: 90%;
+        margin: auto;
+      }
+
+      .list_item_body {
+        background-color: orange;
+        width: 90%;
+        margin: auto;
+      }
+
+    #list_title_entry, #list_text_entry {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    #new_edit_button, #new_delete_button {
+      margin: 10px;
+    }
+
+#modal-header {
+  height: 300px;
   
-  border: 1px solid #ddd;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid rgba(86,61,124,.2);
-  background-color: orange;
 }
 
+  #myModalLabel {
+    
+  }
 
-
-#col-holder {
-  background-color: red;
-}
+  #green {
+    background-color: green;
+  }
+  #red {
+    background-color: red;
+  }
 
 hr {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
+
+/*FOOTER*/
 html,
       body {
         height: 100%;
@@ -73,7 +104,7 @@ html,
         height: 100%;
         /* Negative indent footer by it's height */
         margin: 0 auto;
-        background-color: yellow;
+        background-color: gray;
       }
 
       /* Set the fixed height of the footer here */
