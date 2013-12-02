@@ -1,25 +1,122 @@
-.container {
-  max-width: 760px;
-}
 
-#tester {
- background-color: red;
-}
+/*INDEX PAGE ELEMENTS----------------------------------------*/
+  
+  .container {
+    max-width: 760px;
+  }
 
-#list_item_holder {
+  .input_holder {
+    width: 100%;
+  }
 
-}
-
-
-    #push{
-      background-color: black;
-      z-index: 20;
-      height: 100px;
-    }
-
-    #break_before_footer {
+  #break_before_footer {
       height: 40px;
+  }
+
+  #main_add {
+    width: 100%;
+    margin: auto;
+  }
+
+  #empty_placeholder {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+/*NEWLY CREATED LIST ELEMENTS------------------------------*/
+
+    #new, [id*="new_holder"] {
+      border-radius: 5px;
     }
+
+    [class*="col-"] {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      min-height: 50px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      
+      border: 1px solid #ddd;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid rgba(86,61,124,.2);
+      
+    }
+
+      .list_item_header {
+        color: white;
+        width: 95%;
+        margin: auto;
+        white-space: pre;
+        min-height: 30px;
+        margin: 2.5%;
+        margin-bottom: 0;
+        padding: 5px;
+        font-family: sans-serif;
+        font-size: 20px;
+      }
+
+      .list_item_body {
+        background-color: white;
+        width: 95%;
+        margin: auto;
+        white-space: pre;
+        
+        margin: 2.5%;
+        margin-top: 0;
+        padding: 5px;
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+
+    #new_edit_button {
+      margin-left: 2.5%;
+      margin-right: 1%;
+      
+    }
+
+/*MODAL--------------------------------------------*/
+  
+  #color_choices {
+    margin-right: 10px;
+  }
+
+  #list_title_entry, #list_text_entry {
+      width: 100%;
+      max-width: 100%;   
+  }
+
+  #red {
+    background-color: #9d261d;
+  }
+  #orange {
+    background-color: #f89406;
+  }
+  #gray {
+    background-color: #555;
+  } 
+  #green {
+    background-color: #46a546;
+  }
+  #blue {
+    background-color: #049cdb;
+  }
+  #purple {
+    background-color: #7a43b6;
+  }
+
+  .input_error {
+    color: red;
+    font-size: 12px;
+    width: 100%;
+  }
+
+
+
+/*GENERAL ELEMENTS--------------------------*/
 
 h4 {
   margin-top: 25px;
@@ -33,64 +130,13 @@ h4 {
 }
 
 
-    [class*="col-"] {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      min-height: 80px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      width: 100%;
-      
-      border: 1px solid #ddd;
-      background-color: rgba(86,61,124,.15);
-      border: 1px solid rgba(86,61,124,.2);
-      
-    }
-
-      .list_item_header {
-        background-color: yellow;
-        width: 90%;
-        margin: auto;
-      }
-
-      .list_item_body {
-        background-color: orange;
-        width: 90%;
-        margin: auto;
-      }
-
-    #list_title_entry, #list_text_entry {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    #new_edit_button, #new_delete_button {
-      margin: 10px;
-    }
-
-#modal-header {
-  height: 300px;
-  
-}
-
-  #myModalLabel {
-    
-  }
-
-  #green {
-    background-color: green;
-  }
-  #red {
-    background-color: red;
-  }
-
 hr {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 
-/*FOOTER*/
+/*FOOTER--------------------------------------*/
 html,
       body {
         height: 100%;
@@ -99,22 +145,21 @@ html,
 
       /* Wrapper for page content to push down footer */
       #wrap {
-        min-height: 100%;
+        min-height: 90%;
         height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
+        height: 90%;
+        
         margin: 0 auto;
         background-color: gray;
       }
 
       /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
       
-        background-color: #f5f5f5;
-        background-color: blue;
-
+      #footer {
+        height: 80px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: sans-serif;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
